@@ -1,0 +1,36 @@
+programa {
+  funcao inicio() {
+    real nota[10]
+    inteiro i
+    real soma = 0
+    real media
+    real maior, menor
+    
+
+    para (i = 0; i < 10; i++){
+       escreva("Digite a nota do aluno ", i + 1, ": ")
+            leia(nota[i])
+             soma = soma + nota[i]
+
+    se(i == 0) {
+        maior = nota[i]
+        menor = nota[i]
+      }
+
+    se(nota[i] > maior) {
+        maior = nota[i]
+      }
+
+    se(nota[i] < menor) {
+        menor = nota[i]
+      }
+    }
+
+    media = soma / 10
+
+    escreva("\nMédia da turma: ", media)
+    escreva("\nMaior nota: ", maior)
+    escreva("\nMenor nota: ", menor)
+    }
+  }
+}
