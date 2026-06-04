@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+    real nota[5]
+    inteiro i
+
+    para (i = 0; i < 5; i++){
+       escreva("Digite a nota do aluno ", i + 1, ": ")
+            leia(nota[i])
+    }
+    escreva("\nNotas armazenadas:\n")
+      para(i = 0; i < 5; i++){
+        escreva("Aluno ", i + 1, ": ", nota[i], "\n")
+      }
+  }
+}
